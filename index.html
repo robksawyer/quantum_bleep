@@ -5,26 +5,24 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="game-engine-origin" content="http://www.isogenicengine.com">
 	<meta http-equiv="X-UA-Compatible" content="IE=9" >
 	<title>Quantum Bleep</title>
 
-	<!-- Isogenic Loader -->
-	<script type="text/javascript">var igeRoot = './ige/engine/';</script>
-	<script type="text/javascript" src="./ige/engine/loader.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
 </head>
 <body>
-    <div class="igeLoading loadingFloat">
-        <div class="loadingLogo"></div>
-        <div class="loadingCircle"></div>
-        <div class="loadingCircleInner"></div>
-        <div class="loadingText" id="loadingText">
-            Loading
-        </div>
-    </div>
-    <div class="igeLoading loadingLink">
-        Powered By Anxiety
-        <a href="http://www.isogenicengine.com" target="_blank">http://www.isogenicengine.com</a>
-    </div>
+		<div class="main-container">
+			<div class="intro scene container" id="scene-0">
+					<div class="btn begin" id="begin-btn-1"><img src="./assets/buttons/begin_btn.jpg" alt="begin"/></div>
+			</div>
+			<div class="scene container" id="scene-1">
+				<div class="btn start" id="start-btn-1"><img src="./assets/buttons/start_btn.jpg" alt="start"/></div>
+			</div>
+			<div class="scene container" id="scene-2"></div>
+		</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
 </html>
