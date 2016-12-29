@@ -12,17 +12,34 @@
 	<link rel="stylesheet" type="text/css" href="styles/index.css" />
 </head>
 <body>
-		<div class="main-container">
-			<div class="intro scene container" id="scene-0">
+		<div class="main-container container-fluid">
+			<div class="transition hide row-fluid"></div>
+			<div class="objects row-fluid">
+				<div id="hat-1" class="object"><img src="./assets/objects/hat-1.jpg" alt="hat-1" class="hide" /></div>
+				<div id="hat-2" class="object"><img src="./assets/objects/hat-2.jpg" alt="hat-2" class="hide" /></div>
+			</div>
+			<div class="intro scene row-fluid" id="scene-0">
 					<div class="btn begin" id="begin-btn-1"><img src="./assets/buttons/begin_btn.jpg" alt="begin"/></div>
 			</div>
-			<div class="scene container" id="scene-1">
+			<div class="scene row-fluid hide" id="scene-1">
 				<div class="btn start" id="start-btn-1"><img src="./assets/buttons/start_btn.jpg" alt="start"/></div>
 			</div>
-			<div class="scene container" id="scene-2"></div>
+			<div class="scene row-fluid hide" id="scene-2">
+				<div class="option-btn-container row-fluid">
+					<div class="col-md-6 col-md-offset-4">
+						<div class="btn option-btn option-a" id="option-a"><img src="./assets/buttons/option_a_btn.jpg" alt="option-a"/></div>
+						<div class="btn option-btn option-b" id="option-b"><img src="./assets/buttons/option_b_btn.jpg" alt="option-b"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="scene row-fluid hide" id="scene-3">
+				<div class="btn another-ride" id="another-ride-btn-1"><img src="./assets/buttons/another_ride_btn.jpg" alt="another-ride"/></div>
+			</div>
 		</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="./node_modules/bluebird/js/browser/bluebird.min.js"></script>
 <script type="text/javascript" src="scripts/index.js"></script>
 </html>
