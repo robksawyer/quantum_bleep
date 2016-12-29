@@ -231,13 +231,13 @@ function setupScene2(){
 	$('#option-a').click(function(){
 		console.log('Option A Clicked!');
 
-		selectOption(2, 0);
+		selectOption(0, 0);
 
 	});
 	$('#option-b').click(function(){
 		console.log('Option B Clicked!');
 
-		selectOption(2, 1);
+		selectOption(0, 1);
 	});
 
 }
@@ -266,16 +266,21 @@ function beginClicked(){
 /**
  * selectOption
  */
-function selectOption(scene, val){
+function selectOption(level, val){
 	//Figure out what to do with the initial scene now.
 	//TODO: Add logic here
-	matrix[] = val;
+	matrix[level] = val;
+
+	//Always go back to scene 3
+	gotoScene(3, sceneBackgroundUrls[3]);
 
 	applyObjectsToScene();
-
-	gotoScene(3, sceneBackgroundUrls[3]);
 }
 
+/**
+ * applyObjectsToScene
+ * Handles showing the objects selected thus far.
+ */
 function applyObjectsToScene(){
 	for(var i = 0; i < matrix.length; i++){
 		//Use jQuery to find the object and show it
