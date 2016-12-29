@@ -13,7 +13,7 @@ var objects = [
 	{
 		id: 'hat-1',
 		position: {
-			x: '400px',
+			x: '300px',
 			y: '300px'
 		}
 	},
@@ -285,6 +285,10 @@ function applyObjectsToScene(){
 	for(var i = 0; i < matrix.length; i++){
 		//Use jQuery to find the object and show it
 		console.log(logic[i][matrix[i]].id);
-		$('#' + logic[i][matrix[i]].id).show();
+		$('#' + logic[i][matrix[i]].id).removeClass('hide');
+		$('#' + logic[i][matrix[i]].id).css({
+			'margin-left': logic[i][matrix[i]].position.x,
+			'margin-top': logic[i][matrix[i]].position.y
+		});
 	}
 }
