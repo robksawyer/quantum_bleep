@@ -18,4 +18,5 @@ Blah Blah. Added description or story line here.
 
 # Technical Requirements
 
-- [Isogenic Game Engine](https://github.com/irrelon/ige)
+- [jQuery Docs](https://api.jquery.com)
+- -[Isogenic Game Engine](https://github.com/irrelon/ige)-
